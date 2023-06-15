@@ -39,6 +39,10 @@
 					<osFamily>any</osFamily>
 					<packages>
 						<package>
+							<name>hadoop-httpfs</name>
+							<skipUpgrade>true</skipUpgrade>
+						</package>						
+						<package>
 							<name>hadoop_3_2_2_0_1-httpfs</name>
 							<skipUpgrade>true</skipUpgrade>
 						</package>
