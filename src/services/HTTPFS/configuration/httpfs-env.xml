@@ -65,7 +65,7 @@ export HADOOP_HOME=${HADOOP_HOME:-/usr/hdp/current/hadoop-client}
 export HADOOP_LIBEXEC_DIR=${HADOOP_HOME}/libexec
 
 # Catalina directories for starting and finding the httpfs application
-export CATALINA_BASE=/usr/hdp/current/hadoop-httpfs
+export CATALINA_BASE=/usr/odp/current/hadoop-httpfs
 export HTTPFS_CATALINA_HOME=/etc/hadoop-httpfs/tomcat-deployment
 
 # Set log directory
