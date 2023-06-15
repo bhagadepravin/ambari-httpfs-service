@@ -67,9 +67,9 @@ class Httpfs_component(Script):
         )
         Logger.info(format("Creating {params.httpfs_conf_dir}/httpfs-log4j.properties config file - Done"))
         Logger.info("Creating symlinks (1/2)")
-        Link("/usr/hdp/current/hadoop-httpfs/conf",to = "/etc/hadoop-httpfs/tomcat-deployment/conf")
+        Link("/usr/odp/current/hadoop-httpfs/conf",to = "/etc/hadoop-httpfs/tomcat-deployment/conf")
         Logger.info("Creating symlinks (2/2)")
-        Link("/usr/hdp/current/hadoop-httpfs/libexec",to = "/usr/hdp/current/hadoop-client/libexec")
+        Link("/usr/odp/current/hadoop-httpfs/libexec",to = "/usr/odp/current/hadoop-client/libexec")
         Logger.info("Creating symlinks - DONE")
 
     def install(self, env):
@@ -78,16 +78,16 @@ class Httpfs_component(Script):
         self.install_packages(env)
     def stop(self, env):
         Logger.info("Stopping HttpFS service")
-        Execute("/usr/hdp/current/hadoop-httpfs/etc/init.d/hadoop-httpfs stop")
+        Execute("/usr/odp/current/hadoop-httpfs/etc/init.d/hadoop-httpfs stop")
     def start(self, env):
         import params
         self.configure(env)
         Logger.info("Starting HttpFS service")
-        Execute("/usr/hdp/current/hadoop-httpfs/etc/init.d/hadoop-httpfs start")
+        Execute("/usr/odp/current/hadoop-httpfs/etc/init.d/hadoop-httpfs start")
     def status(self, env):
         Logger.info("Getting status of HttpFS service")
         try:
-            Execute("/usr/hdp/current/hadoop-httpfs/etc/init.d/hadoop-httpfs status")
+            Execute("/usr/odp/current/hadoop-httpfs/etc/init.d/hadoop-httpfs status")
         except Fail:
             raise ComponentIsNotRunning()
 
