@@ -50,6 +50,10 @@
 							<name>hadoop_3_2_2_0_1-httpfs-server</name>
 							<skipUpgrade>true</skipUpgrade>
 						</package>
+						<package>
+							<name>bigtop-utils</name>
+							<skipUpgrade>true</skipUpgrade>
+						</package>							
 					</packages>
 				</osSpecific>
 			</osSpecifics>
