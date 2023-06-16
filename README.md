@@ -3,7 +3,6 @@ Simple ambari extension for HttpFS hdfs service. Still WIP.
 
 Supported OS: any
 
-Supported Ambari version:
 Tested Ambari Server 2.7.6.0
 
 Manual changes required to start the service.
