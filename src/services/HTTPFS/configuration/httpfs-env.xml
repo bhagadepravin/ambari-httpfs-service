@@ -61,7 +61,7 @@ source /etc/hadoop/conf/hadoop-env.sh
 export HTTPFS_CONFIG=/etc/hadoop-httpfs/conf
 
 ### Removing the original HARD CODED Version reference
-export HADOOP_HOME=${HADOOP_HOME:-/usr/hdp/current/hadoop-client}
+export HADOOP_HOME=${HADOOP_HOME:-/usr/odp/current/hadoop-client}
 export HADOOP_LIBEXEC_DIR=${HADOOP_HOME}/libexec
 
 # Catalina directories for starting and finding the httpfs application
